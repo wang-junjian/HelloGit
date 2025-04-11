@@ -74,3 +74,39 @@ Changes to be committed:
         new file:   README.md
         new file:   git-command.txt
 ```
+
+### 提交
+
+```bash
+git commit -m "Init commit"
+```
+```bash
+[main (root-commit) f0f2f20] Init commit
+ 2 files changed, 78 insertions(+)
+ create mode 100644 README.md
+ create mode 100644 git-command.txt
+```
+
+### 设置远程仓库
+
+```bash
+git remote add origin https://github.com/wang-junjian/HelloGit.git
+```
+
+### 推送本地仓库到远程仓库
+
+```bash
+# git push --set-upstream origin main
+git push -u origin main
+```
+```bash
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 906 bytes | 906.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/wang-junjian/HelloGit.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+```
