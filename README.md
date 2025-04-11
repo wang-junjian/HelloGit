@@ -110,3 +110,39 @@ To https://github.com/wang-junjian/HelloGit.git
  * [new branch]      main -> main
 branch 'main' set up to track 'origin/main'.
 ```
+
+
+## 分支
+
+### 查看分支
+
+```bash
+git branch
+```
+```bash
+* main
+```
+
+### 创建分支
+
+```bash
+git branch feat-branch
+```
+
+### 交换到分支
+
+```bash
+git switch feat-branch
+```
+```bash
+Switched to branch 'feat-branch'
+```
+
+### 创建并交换到分支
+
+```bash
+git switch -c feat-branch
+```
+```bash
+Switched to a new branch 'feat-branch'
+```
