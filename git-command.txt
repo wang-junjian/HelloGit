@@ -1,0 +1,2 @@
+git init    # 初始一个新的Git仓库
+git status  # 检查仓库的状态
