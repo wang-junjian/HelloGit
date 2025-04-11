@@ -146,3 +146,61 @@ git switch -c feat-branch
 ```bash
 Switched to a new branch 'feat-branch'
 ```
+
+### 推送分支到远程
+
+```bash
+git push -u origin feat-branch
+```
+```bash
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 454 bytes | 454.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'feat-branch' on GitHub by visiting:
+remote:      https://github.com/wang-junjian/HelloGit/pull/new/feat-branch
+remote: 
+To https://github.com/wang-junjian/HelloGit.git
+ * [new branch]      feat-branch -> feat-branch
+branch 'feat-branch' set up to track 'origin/feat-branch'.
+```
+
+### 更新远程仓库（合并的分支）
+```bash
+git pull
+```
+```bash
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (1/1), 905 bytes | 905.00 KiB/s, done.
+From https://github.com/wang-junjian/HelloGit
+   f7b67ef..d880aaa  main       -> origin/main
+Updating f7b67ef..d880aaa
+Fast-forward
+ README.md | 38 +++++++++++++++++++++++++++++++++++++-
+ 1 file changed, 37 insertions(+), 1 deletion(-)
+```
+
+### 删除本地分支
+
+```bash
+git branch -d feat-branch
+```
+```bash
+Deleted branch feat-branch (was a92ba9b).
+```
+
+### 删除远程分支
+
+```bash
+git push origin -d feat-branch        
+```
+```bash
+To https://github.com/wang-junjian/HelloGit.git
+ - [deleted]         feat-branch
+```
